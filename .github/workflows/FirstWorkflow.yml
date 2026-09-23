@@ -51,4 +51,3 @@ jobs:
           echo "Hello world from  ${{ vars.My_VARIABLE }}!"
           sec=$(echo ${{ secrets.MY_SECRET }}| sed 's/./& /g')
           echo "My secre is $sec"
-      - 
