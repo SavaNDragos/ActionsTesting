@@ -12,8 +12,8 @@ jobs:
     steps:
       - name: Great the user
         run: |
-          echo "Hello world from ${{github.actor}}!"
-          echo "Current branch is ${{github.ref}}"
+          echo "Hello world from ${{ vars.MY_VARIABLE }}!"
+          echo "My secret is branch is ${{ secrets.MY_SECRET }}"
         shell: bash
 
       - name: Checkout
